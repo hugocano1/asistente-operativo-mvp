@@ -100,7 +100,6 @@ def buscar_contexto_en_db(pregunta_usuario):
             "query_embedding": query_vector,
             "match_threshold": 0.4,
             "match_count": 5,
-            "filter_category": "legal"
         }).execute()
         return response.data
     except Exception as e:
